@@ -31,39 +31,5 @@ JavaScript
 Java HTTP Server
 VS Code
 
-Project Structure:
-
-Matrix-Multiplication/
-├── src/
-│  ├── main/
-│  │  └── java/
-│  │    ├── Main.java
-│  │    ├── MatrixServer.java
-│  │    ├── TensorFlowTest.java
-│  │    │
-│  │    ├── matrix/
-│  │    │  ├── Matrix.java
-│  │    │  ├── MatrixGenerator.java
-│  │    │  └── MatrixValidator.java
-│  │    │
-│  │    ├── threading/
-│  │    │  ├── ComputationEvent.java
-│  │    │  ├── MatrixMultiplier.java
-│  │    │  ├── MatrixTask.java
-│  │    │  └── WorkerManager.java
-│  │    │
-│  │    └── verification/
-│  │      └── TensorFlowVerifier.java
-│  │
-│  └── test/
-│    └── java/
-│      └── MatrixMultiplierTest.java
-│
-├── web/
-│  ├── index.html
-│  ├── style.css
-│  └── animation.js
-│
-├── pom.xml
-├── classpath.txt
-└── README.md
+Conclusion:
+This project helped us understand how matrix multiplication can be done using multiple threads in Java. By dividing the work between different worker threads, the calculations can be performed at the same time. We also used TensorFlow to check whether our result was correct and added a simple web interface to make the process easier to understand. Overall, the project gave us practical experience with multithreading, matrix operations, testing, and result verification.
