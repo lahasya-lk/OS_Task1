@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Threaded Matrix Multiplication</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <h1>Threaded Matrix Multiplication</h1>
+
+    <p>
+        Parallel Matrix Computation
+        • Java Threads
+        • TensorFlow Verification
+    </p>
+
+</header>
+
+
+<main>
+
+
+    <!-- MATRIX INPUTS -->
+
+    <div class="matrix-container">
+
+
+        <!-- MATRIX A -->
+
+        <section class="matrix-section">
+
+            <h2>Matrix A</h2>
+
+            <div class="dimension-row">
+
+                <label>
+                    Rows:
+                    <input
+                        type="number"
+                        id="aRows"
+                        value="2"
+                        min="1">
+                </label>
+
+
+                <label>
+                    Columns:
+                    <input
+                        type="number"
+                        id="aColumns"
+                        value="2"
+                        min="1">
+                </label>
+
+            </div>
+
+
+            <div id="matrixA"></div>
+
+        </section>
+
+
+
+        <!-- MATRIX B -->
+
+        <section class="matrix-section">
+
+            <h2>Matrix B</h2>
+
+            <div class="dimension-row">
+
+                <label>
+                    Rows:
+                    <input
+                        type="number"
+                        id="bRows"
+                        value="2"
+                        readonly>
+                </label>
+
+
+                <label>
+                    Columns:
+                    <input
+                        type="number"
+                        id="bColumns"
+                        value="2"
+                        min="1">
+                </label>
+
+            </div>
+
+
+            <div id="matrixB"></div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+        <button onclick="generateMatrices()">
+            Generate Matrices
+        </button>
+
+
+        <button onclick="generateRandom()">
+            Generate Random
+        </button>
+
+
+        <button onclick="multiplyMatrices()">
+            MULTIPLY
+        </button>
+
+    </div>
+
+
+
+    <!-- RESULT -->
+
+    <section class="result-section">
+
+        <h2>Result Matrix C</h2>
+
+        <div id="result"></div>
+
+    </section>
+
+
+
+    <!-- STATUS -->
+
+    <section class="status-section">
+
+        <p id="status">
+            Ready
+        </p>
+
+    </section>
+
+<!-- ANIMATION -->
+
+<section class="animation-section">
+
+    <h2>Matrix Multiplication Animation</h2>
+
+    <div id="animation">
+        Waiting for multiplication...
+    </div>
+
+</section>
+
+
+</main>
+
+
+<script src="animation.js"></script>
+
+</body>
+
+</html>
