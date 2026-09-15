@@ -1,4 +1,55 @@
-# Multithreaded Matrix Multiplication
+1. Producer-Consumer Problem Using Java Threads
+
+##  Overview
+This project demonstrates the **Producer-Consumer Problem** using Java multithreading.
+A **Producer** generates items and adds them to a shared buffer, while a **Consumer** removes items from the buffer. Synchronization is used to ensure that the Producer waits when the buffer is full and the Consumer waits when the buffer is empty.
+
+##  Concepts Used
+* Java Multithreading
+* Thread Synchronization
+* `synchronized`
+* `wait()`
+* `notifyAll()`
+* Circular Buffer
+* `sleep()`
+* `join()`
+
+##  How It Works
+* Buffer size: **5**
+* Number of items: **10**
+* Producer produces items from **1 to 10**.
+* Consumer consumes the produced items.
+* If the buffer is full, the Producer waits.
+* If the buffer is empty, the Consumer waits.
+* `notifyAll()` is used to notify waiting threads after an item is added or removed.
+
+##  How to Run
+Compile the program:
+
+```bash
+javac -d . Prod_Cons_Demo.java
+```
+
+Run the program:
+```bash
+java project.Prod_Cons_Demo
+```
+The program displays the produced and consumed items along with the current number of items in the buffer.
+
+##  Project Structure
+```text
+Producer-Consumer/
+└── src/
+    └── project/
+        └── Prod_Cons_Demo.java
+```
+
+##  Conclusion
+This project provides a simple demonstration of **thread synchronization and inter-thread communication** using the Producer-Consumer problem in Java.
+
+
+
+2. Multithreaded Matrix Multiplication
 
 ## Overview
 
